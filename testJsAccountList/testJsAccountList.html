@@ -1,0 +1,17 @@
+<template>
+  <lightning-quick-action-panel>
+    <div class="acc-container">
+      <lightning-record-view-form record-id={recordId} object-api-name="Account">
+        <div class="slds-grid">
+          <div class="slds-col slds-size_1-of-2">
+            <lightning-output-field field-name="Name"></lightning-output-field>
+          </div>
+          <div class="slds-col slds-size_1-of-2">
+            <lightning-output-field field-name="Id"></lightning-output-field>
+          </div>
+        </div>
+      </lightning-record-view-form>
+    </div>
+    <lightning-button variant="destructive" label="Close" onclick={closeTable}></lightning-button>
+  </lightning-quick-action-panel>
+</template>
